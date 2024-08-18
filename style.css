@@ -1,0 +1,207 @@
+body {
+    font-family: 'Lora', sans-serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    background-color: #fbf9fc;
+}
+
+header {
+    background-color: #fffcfc;
+    color: rgb(95, 1, 1);
+    text-align: center;
+    padding: 0.5px 0;
+    display: flex;
+    flex-direction: column; /* Adiciona esta linha para empilhar itens verticalmente */
+    align-items: center; /* Centraliza itens horizontalmente */
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Alinha a logo e o texto verticalmente ao centro */
+    gap: 0px; /* Espaçamento entre a logo e o nome */
+}
+
+header img {
+    width: 200px; /* Ajuste o tamanho da logo conforme necessário */
+    height: auto;
+}
+
+header h2 {
+    margin: 0;
+    font-size:7.5em;
+    font-family: 'Dancing Script', cursive;
+}
+
+header nav {
+    margin-top: 0.5px; /* Adiciona espaço entre o nome/logo e o menu */
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+    padding: 0.5rem;
+
+}
+
+header nav ul li a {
+    color: rgb(199, 5, 5);
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+#about {
+    background: linear-gradient(to right, #f5d6d6, #fcc9c9); /* Gradiente suave de fundo */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+#about h2 {
+    font-family: 'Dancing Script', cursive; /* Fonte script para o título */
+    font-size: 3.0em; /* Tamanho grande para o título */
+    color: #080808;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-family: 'Lora', serif; /* Fonte padrão para o texto */
+    font-size: 1.2em; /* Tamanho da fonte um pouco maior */
+    color: #080808;
+    line-height: 1.6; /* Altura da linha para melhor legibilidade */
+    margin: 0;
+}
+
+#services {
+    padding: 15px;
+    background: #f9f9f9; /* Fundo claro para a seção de serviços */
+}
+
+h2 {
+    font-family: 'Dancing Script', cursive; /* Fonte script para os subtítulos */
+    font-size: 2.5em;
+} 
+
+.service {
+    background: #ffffff; /* Fundo branco para cada serviço */
+    border-radius: 15px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    text-align: center;
+    transition: transform 0.3s ease-in-out; /* Transição suave para efeito de hover */
+}
+
+.service:hover {
+    transform: translateY(-10px); /* Efeito de levantamento ao passar o mouse */
+}
+
+.service h3 {
+    font-family: 'Dancing Script', cursive; /* Fonte script para os títulos dos serviços */
+    font-size: 2.5em;
+    color: #7e0606; /* Cor destacada para os títulos */
+    margin-bottom: 15px;
+}
+
+.service p {
+    font-family: 'Lora', serif; /* Fonte padrão para a descrição */
+    font-size: 1.0em;
+    color: #080808; /* Cor cinza para a descrição */
+    line-height: 1.6;
+}
+
+#services .images, .team-members {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#services .images img, .team-members .member img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#team .member {
+    text-align: center;
+    max-width: 200px;
+}
+
+#team .member img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+#services .images {
+    display: flex;
+    justify-content: center; /* Centraliza as imagens horizontalmente */
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#services .images img{ 
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+#contact h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3.0em;
+    color: #080808;
+    margin-bottom: 20px;
+    text-align: center; /* Centraliza o título */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
